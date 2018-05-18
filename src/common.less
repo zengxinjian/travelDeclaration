@@ -1,0 +1,132 @@
+/**
+ *
+ *  Created by youli on 2017/11/9
+ *
+ */
+@import "./theme";
+
+:global(*) {
+  -webkit-touch-callout: none; /*系统默认菜单被禁用*/
+  -webkit-user-select: none; /*webkit浏览器*/
+  -khtml-user-select: none; /*早期浏览器*/
+  -moz-user-select: none; /*火狐*/
+  -ms-user-select: none; /*IE10*/
+  -webkit-touch-callout: none; /* disable the IOS popup when long-press on a link */
+  user-select: none;
+}
+
+:global(input) {
+  -webkit-user-select: auto; /*webkit浏览器*/
+}
+
+:global(.form-bottom-oper) {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 999;
+  :global(.am-button) {
+    border-radius: 0px;
+  }
+}
+
+:global(.right-link) {
+  color: @brand-wait !important;
+}
+
+:global(.filter-icon) {
+  color: @color-text-caption;
+  font-size: @font-size-caption;
+}
+
+:global(.tbl-red-bg){
+  background-color: red;
+}
+
+:global(.am-button-primary.am-button-disabled:before),
+:global(.am-button-primary.am-button-disabled) {
+  opacity: 1;
+  background-color: #c7c7c7;
+  border-color: #c7c7c7 !important;
+  color: white;
+}
+
+:global(.am-button-primary.am-button-disabled) {
+  span {
+    position: relative;
+  }
+}
+
+:global(.add-ellipsis) {
+  overflow: hidden;
+  margin: 0px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+}
+
+:global(.component-hide) {
+  display: none;
+}
+
+:global(.caption) {
+  font-size: @font-size-caption;
+  color: @color-text-caption;
+}
+
+:global(.am-picker-popup-item.am-picker-popup-header-left) {
+  color: #b2b2b2 !important;
+}
+
+:global(.list-show-detail) {
+  :global(.am-list-item .am-list-line .am-list-extra) {
+    -webkit-flex-basis: 65% !important;
+    -ms-flex-preferred-size: 65% !important;
+    flex-basis: 65% !important;
+    color: @color-text-base;
+  }
+}
+
+:global(.list-flex-line) {
+  :global(.am-flexbox-item) {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    :global(span){
+      color: @color-text-base;
+    }
+  }
+
+  :global(.am-flexbox.am-flexbox-align-center) {
+    border-top: 1px solid @border-color-base;
+  }
+
+  :global(.two-column) {
+    p {
+      margin: 0px;
+      padding: 0px;
+      font-size: 12px;
+    }
+  }
+}
+
+:global(.sidebar-content) {
+  :global(.am-drawer-draghandle) {
+    background-color: transparent;
+  }
+}
+
+:global(.relative-list){
+    position: relative;
+    padding-top: 20px;
+    :global(.absolute-row) {
+      position: absolute;
+      top: 10px;
+      left: @list-padding;
+      margin: 0px;
+    }
+}

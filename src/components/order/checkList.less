@@ -1,0 +1,68 @@
+/**
+ *
+ *  Created by youli on 2018/1/11
+ *
+ */
+@import "../../theme";
+
+.warpper {
+  :global(.am-flexbox-item) {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  :global(.am-flexbox.am-flexbox-align-center) {
+    border-top: 1px solid @border-color-base;
+  }
+  :global(.am-checkbox-wrapper){
+    margin-right: 5px;
+  }
+  .two {
+    p {
+      margin: 0px;
+      padding: 0px;
+      font-size: 12px;
+    }
+  }
+
+  .bottom {
+    height: 45px;
+    padding-top: 5px;
+    padding-right: @list-padding;
+    padding-left: @list-padding;
+    position: absolute;
+    bottom:5px;
+    width:100%;
+    :global(.am-flexbox-item) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .right {
+      width: 30%;
+      float: right;
+    }
+    .left{
+      width: 70%;
+      float: left;
+      display: block;
+      height: 30px;
+      line-height: 30px;
+      position: relative;
+    }
+    .selectText{
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      top: 0px;
+      left: 60px;
+      span{
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        margin: 0px;
+        padding: 0px;
+        line-height: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+/**
+ *
+ *  Created by youli on 2017/12/20
+ *
+ */
+@import "../../theme";
+
+@min:50px;
+.wrapper{
+  background-color: #fff;
+  padding-left:10px 
+  // min-height: @min;
+  // padding-left: @list-padding;
+  // padding-right: @list-padding;
+
+}
+
+.right {
+  max-height: @min;
+  position: relative;
+  .plus{
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+    width: 100px;
+    height: @min;
+    .upload {
+      color: @color-text-caption;
+      font-size: @font-size-caption;
+      position: relative;
+      display: block;
+      height: 100%;
+      width: 100px;
+      line-height: @min;
+      .icon {
+        height: 36px;
+        width: 36px;
+        position: absolute;
+        margin-left: 5px;
+        top: 7px;
+      }
+    }
+  }
+  .image{
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    height:40px;
+    width:40px;
+    .mask{
+      position: absolute;
+      background-color: #000;
+      opacity: 0.5;
+      color: #fff;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      font-size: @font-size-caption;
+      text-align: center;
+      line-height: 40px;
+    }
+  }
+}
+
+.color_bababa{
+  color: #BaBaBa;
+}

@@ -1,0 +1,32 @@
+/**
+ *
+ *  Created by youli on 2017/11/19
+ *
+ */
+
+
+.logo {
+  background-color: #fff;
+  width: 46px;
+  height: 41px;
+  padding-top: 5px;
+  border-radius: 50px;
+  text-align: center;
+  :global(.am-flexbox.am-flexbox-align-center) {
+    margin: auto;
+  }
+}
+
+.bankItem {
+  border-radius: 6px;
+  margin-bottom: 10px;
+  :global(.am-list-body::before),
+  :global(.am-list-body::after),
+  :global(.am-list-body),
+  :global(.am-list-item) {
+    background-color: transparent !important;
+  }
+  :global(.am-list-content) {
+    color: #fff !important;
+  }
+}

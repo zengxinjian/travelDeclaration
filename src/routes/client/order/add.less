@@ -1,0 +1,65 @@
+/**
+ *
+ *  Created by youli on 2017/11/9
+ *
+ */
+@import "../../../theme";
+
+.content {
+  .sidebar {
+    height: 100%;
+    background-color: #fff;
+    .btn {
+      position: absolute;
+      bottom: @list-padding;
+      left: 0px;
+      right: 0px;
+      padding: 0px @list-padding;
+    }
+
+    .item {
+      line-height: 1.4;
+    }
+  }
+  :global(.am-list-line::after){
+    height: 2px !important;
+  }
+  :global(.am-drawer-draghandle) {
+    background-color: transparent;
+  }
+}
+
+.logout{
+  position: absolute;
+  bottom: @list-padding;
+  left: @list-padding;
+  right: @list-padding;
+}
+
+.bankNum{
+  padding: 5px 10px;
+  margin: 15px 5px 5px;
+  font-size: 15px;
+  .notbankNum{
+    color: red;
+    font-size: 15px;
+  }
+}
+
+.notBut{
+  background-color: #A9A9A9 !important;
+  color: #ffffff !important;
+}
+
+
+.search{
+
+}
+
+.deleteline {
+  :global(.am-list-line::after),
+  :global(.am-list-body::before),
+  :global(.am-list-body::after) {
+    background-color: transparent !important;
+  }
+}

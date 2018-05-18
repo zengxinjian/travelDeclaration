@@ -1,0 +1,83 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "es6":true
+  },
+  "rules": {
+
+    // 非交互式元素应该没有鼠标或键盘事件监听器
+    "jsx-a11y/no-static-element-interactions": [0],
+
+    // 允许在jsx中使用bind
+    "react/jsx-no-bind": [0],
+
+    // 可以在内部使用require
+    "global-require": [0],
+    "import/no-dynamic-require":[0],
+
+    // 不要求必须要有基数
+    "radix":[0],
+
+    // 允许传递 array object
+    "react/forbid-prop-types": [0],
+
+    "react/prop-types":[0],
+
+    // 允许使用 js 新特性
+    "no-restricted-syntax": ["error",  "WithStatement", "BinaryExpression[operator='in']"],
+
+    // no-var
+    "no-var": "error",
+
+    // 允许使用一元操作符
+    "no-plusplus":[0],
+
+    // 要求或禁止 var 声明中的初始化
+    "init-declarations": 2,
+
+    // 强制使用单引号
+    "quotes": ["error", "single"],
+
+    // 禁止不必要的分号
+    "no-extra-semi": "error",
+
+    // 强制使用一致的换行风格
+    "linebreak-style": ["error", "unix"],
+
+    // 空格2个
+    "indent": ["error", 2, {"SwitchCase": 1}],
+
+    // 指定数组的元素之间要以空格隔开(,后面)， never参数：[ 之前和 ] 之后不能带空格，always参数：[ 之前和 ] 之后必须带空格
+    "array-bracket-spacing": [2, "never"],
+
+    // if while function 后面的{必须与if在同一行，java风格。
+    "brace-style": [2, "1tbs", {"allowSingleLine": true}],
+
+    // 双峰驼命名格式
+    "camelcase": 2,
+
+    // 数组和对象键值对最后一个逗号， never参数：不能带末尾的逗号, always参数：必须带末尾的逗号，
+    "comma-dangle": [2, "never"],
+
+    // 控制逗号前后的空格
+    "comma-spacing": [2, {"before": false, "after": true}],
+
+    // 控制逗号在行尾出现还是在行首出现
+    "comma-style": [2, "last"],
+
+    // 以方括号取对象属性时，[ 后面和 ] 前面是否需要空格, 可选参数 never, always
+    "computed-property-spacing": [2, "never"],
+
+    // 允许.js后缀
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  }
+}
